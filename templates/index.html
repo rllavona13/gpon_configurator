@@ -26,8 +26,29 @@
       h2{
         color: black;
         font-family: arial;
-        font-size: 100%;
+        font-size: 120%;
         text-align: center;
+        }
+
+       h3{
+        color: black;
+        font-family: arial;
+        font-size: 120%;
+        text-align: left;
+        }
+
+         h4{
+        color: black;
+        font-family: arial;
+        font-size: 120%;
+        text-align: left;
+        }
+
+        h5{
+        color: black;
+        font-family: arial;
+        font-size: 120%;
+        text-align: left;
         }
 
       p{
@@ -36,6 +57,7 @@
         font-size: 100%;
         text-align: center;
         }
+
 
         ul {
     list-style-type: none;
@@ -76,10 +98,115 @@
 
     <h1>GPON CONFIGURATOR</h1>
     <h2> Please fill the text fields with the information from customers. </h2>
-    <h3>Test</h3>
+
+    <h3>Slot:</h3>
+    <form >
+  <select name="OLT Position">
+    <option value="1/1" selected>1/1</option>
+    <option value="1/2">1/2</option>
+    <option value="1/3">1/3</option>
+    <option value="1/4">1/4</option>
+    <option value="1/5">1/5</option>
+    <option value="1/6">1/6</option>
+    <option value="1/7">1/7</option>
+    <option value="1/8">1/8</option>
+  </select>
+    </form>
+
+    <h3>ONT Position and System Info</h3>
+  <form >
+  <select name="ONT Position">
+    <option value="1/1/1" selected>1/1/1</option>
+    <option value="1/1/2">1/1/2</option>
+    <option value="1/1/3">1/1/3</option>
+    <option value="1/1/4">1/1/4</option>
+    <option value="1/1/5">1/1/5</option>
+    <option value="1/1/6">1/1/6</option>
+    <option value="1/1/7">1/1/7</option>
+    <option value="1/1/8">1/1/8</option>
+    <option value="1/1/9">1/1/9</option>
+    <option value="1/1/10">1/1/10</option>
+    <option value="1/1/11">1/1/11</option>
+    <option value="1/1/12">1/1/12</option>
+    <option value="1/1/13">1/1/13</option>
+    <option value="1/1/14">1/1/14</option>
+    <option value="1/1/15">1/1/15</option>
+    <option value="1/1/16">1/1/16</option>
+    <option value="1/1/17">1/1/17</option>
+    <option value="1/1/18">1/1/18</option>
+    <option value="1/1/19">1/1/19</option>
+    <option value="1/1/20">1/1/20</option>
+    <option value="1/1/21">1/1/21</option>
+    <option value="1/1/22">1/1/22</option>
+    <option value="1/1/23">1/1/23</option>
+    <option value="1/1/24">1/1/24</option>
+    <option value="1/1/25">1/1/25</option>
+    <option value="1/1/26">1/1/26</option>
+    <option value="1/1/27">1/1/27</option>
+    <option value="1/1/28">1/1/28</option>
+    <option value="1/1/29">1/1/29</option>
+    <option value="1/1/30">1/1/30</option>
+    <option value="1/1/31">1/1/31</option>
+    <option value="1/1/32">1/1/32</option>
+    <option value="1/1/33">1/1/33</option>
+    <option value="1/1/34">1/1/34</option>
+    <option value="1/1/35">1/1/35</option>
+    <option value="1/1/36">1/1/36</option>
+    <option value="1/1/37">1/1/37</option>
+    <option value="1/1/38">1/1/38</option>
+    <option value="1/1/39">1/1/39</option>
+    <option value="1/1/40">1/1/40</option>
+    <option value="1/1/41">1/1/41</option>
+    <option value="1/1/42">1/1/42</option>
+    <option value="1/1/43">1/1/43</option>
+    <option value="1/1/44">1/1/44</option>
+    <option value="1/1/45">1/1/45</option>
+    <option value="1/1/46">1/1/46</option>
+    <option value="1/1/47">1/1/47</option>
+    <option value="1/1/48">1/1/48</option>
+    <option value="1/1/49">1/1/49</option>
+    <option value="1/1/50">1/1/50</option>
+    <option value="1/1/51">1/1/51</option>
+    <option value="1/1/52">1/1/52</option>
+    <option value="1/1/54">1/1/54</option>
+    <option value="1/1/55">1/1/55</option>
+    <option value="1/1/56">1/1/56</option>
+    <option value="1/1/57">1/1/57</option>
+    <option value="1/1/58">1/1/58</option>
+    <option value="1/1/59">1/1/59</option>
+    <option value="1/1/60">1/1/60</option>
+    <option value="1/1/61">1/1/61</option>
+    <option value="1/1/62">1/1/62</option>
+    <option value="1/1/63">1/1/63</option>
+    <option value="1/1/64">1/1/64</option>
+
+  </select>
+  <br><br>
+  </form>
 
 
+    <form action="{{ url_for('gpon_configurator') }}" method="POST">
+        <input type="text" class="form-control" placeholder="Customer Name: " name="Customer Name">
+    </form>
 
+    <h4>PPPoE Information:</h4>
+    <form action="{{ url_for('gpon_configurator') }}" method="POST">
+        <input type="text" class="form-control" placeholder="PPPoE Username:" name="pppoeusername">
+    </form>
+
+    <form action="{{ url_for('gpon_configurator') }}" method="POST">
+        <input type="text" class="form-control" placeholder="PPPoE Password:" name="pppoepassword">
+    </form>
+
+    <h5>Voip Information:</h5>
+
+    <form action="{{ url_for('gpon_configurator') }}" method="POST">
+        <input type="text" class="form-control" placeholder="SIP Line 1:" name="pppoeusername">
+    </form>
+
+    <form action="{{ url_for('gpon_configurator') }}" method="POST">
+          <input type="text" class="form-control" placeholder="PPPoE Password:" name="pppoepassword">
+    </form>
 
 
 </body>

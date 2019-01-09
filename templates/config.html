@@ -26,14 +26,29 @@
       h2{
         color: black;
         font-family: arial;
-        font-size: 100%;
-        text-align: center;
+        font-size: 150%;
+        text-align: left;
         }
+
+      h3{
+        color: black;
+        font-family: arial;
+        font-size: 150%;
+        text-align: left;
+        }
+
+      h4{
+        color: black;
+        font-family: arial;
+        font-size: 150%;
+        text-align: left;
+        }
+
 
       p{
         color: black;
         font-family: arial;
-        font-size: 100%;
+        font-size: 150%;
         text-align: center;
         }
 
@@ -45,7 +60,15 @@
     <h1>GPON CONFIG</h1>
     <pre>
 
-    {{ gpon_lines }}
+        <h2>System Information:</h2>
+         {{ gpon_lines }}
+
+        <h3>PPPoE Information:</h3>
+        {{ gpon_pppoe }}
+
+        <h4>SIP Lines Information:</h4>
+        {{ gpon_voice }}
+
 
     </pre>
 

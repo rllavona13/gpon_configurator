@@ -6,8 +6,6 @@ app = Flask(__name__)
 @app.route('/', methods=['GET', 'POST'])
 def gpon_form():
 
-    gpon_lines =[]
-
     if 'submit' in request.form:
         slot = (request.form['SlotPosition'])
         olt = (request.form['OLTPosition'])

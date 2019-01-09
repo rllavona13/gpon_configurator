@@ -121,7 +121,7 @@
     <h1>GPON CONFIGURATOR</h1>
     <h2> Please fill the text fields with the information from customers. </h2>
 
-  <div>  <h3>Slot:</h3></div>
+  <h3>Slot:</h3>
     <form >
   <select name="Slot Position">
     <option value="1" selected>1</option>
@@ -129,7 +129,7 @@
   </select>
     </form>
 
-    <h7>OLT Position</h7>
+    <h7>OLT Position:</h7>
     <form >
   <select name="OLT Position">
     <option value="1" selected>1</option>
@@ -143,7 +143,7 @@
   </select>
     </form>
 
-    <h3>ONT Position</h3>
+    <h3>ONT Position:</h3>
   <form>
   <select name="ONT Position">
     <option value="1" selected>1</option>
@@ -257,7 +257,7 @@
 
     <h5>Voip Information:</h5>
 
-    <h8>SIP Line 1</h8>
+    <h8>SIP Line 1:</h8>
     <form action="{{ url_for('gpon_form') }}" method="POST">
         <input type="text" class="form-control" placeholder="SIP Line 1:" name="sipuser1">
     </form>
@@ -265,7 +265,7 @@
     <form action="{{ url_for('gpon_form') }}" method="POST">
           <input type="text" class="form-control" placeholder="SIP Line 1 Password:" name="sippassword1">
     </form>
-      <h8>SIP Line 2</h8>
+      <h8>SIP Line 2:</h8>
         <form action="{{ url_for('gpon_form') }}" method="POST">
         <input type="text" class="form-control" placeholder="SIP Line 2:" name="sipuser2">
     </form>

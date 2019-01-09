@@ -21,12 +21,11 @@ def gpon_form():
 
         gpon_lines = slot, olt, ont, sernoid, customername, pppoeusername, pppoepassword, sipuser1, sippassword1, \
             sipuser2, sippassword2
+
         return render_template('config.html', gpon_lines=gpon_lines)
 
     else:
         return render_template('index.html')
-
-#TEST
 
 if __name__ == '__main__':
 

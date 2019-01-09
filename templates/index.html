@@ -86,11 +86,9 @@
     <option value="1" selected>1</option>
     <option value="2">2</option>
   </select>
-    </form>
 
     <h3>OLT Position:</h3>
-    <form action="{{ url_for('gpon_form') }}" method="POST">
-  <select name="OLTPosition">
+    <select name="OLTPosition">
     <option value="1" selected>1</option>
     <option value="2">2</option>
     <option value="3">3</option>
@@ -99,11 +97,11 @@
     <option value="6">6</option>
     <option value="7">7</option>
     <option value="8">8</option>
-  </select>
-    </form>
+    </select>
+
 
     <h3>ONT Position:</h3>
-  <form action="{{ url_for('gpon_form') }}" method="POST">
+
   <select name="ONTPosition">
     <option value="1" selected>1</option>
     <option value="2">2</option>
@@ -171,10 +169,10 @@
 
   </select>
   <br><br>
-  </form>
+
 
     <h6>SernoID:</h6>
-    <form action="{{ url_for('gpon_form') }}" method="POST">
+
       <select name="SernoID">
     <option value="1" selected>1</option>
     <option value="2">2</option>
@@ -197,44 +195,43 @@
     <option value="19">19</option>
     <option value="20">20</option>
       </select>
-     </form>
 
 
-    <form action="{{ url_for('gpon_form') }}" method="POST">
+
         <input type="text" class="form-control" placeholder="Customer Name: " name="CustomerName">
-    </form>
+
 
 
     <h4>PPPoE Information:</h4>
-    <form action="{{ url_for('gpon_form') }}" method="POST">
-        <input type="text" class="form-control" placeholder="PPPoE Username:" name="pppoeusername">
-    </form>
 
-    <form action="{{ url_for('gpon_form') }}" method="POST">
+        <input type="text" class="form-control" placeholder="PPPoE Username:" name="pppoeusername">
+
+
+
         <input type="text" class="form-control" placeholder="PPPoE Password:" name="pppoepassword">
-    </form>
+
 
     <h5>Voip Information:</h5>
 
     <h3>SIP Line 1:</h3>
-    <form action="{{ url_for('gpon_form') }}" method="POST">
+
         <input type="text" class="form-control" placeholder="SIP Line 1:" name="sipuser1">
-    </form>
 
-    <form action="{{ url_for('gpon_form') }}" method="POST">
+
+
           <input type="text" class="form-control" placeholder="SIP Line 1 Password:" name="sippassword1">
-    </form>
+
       <h3>SIP Line 2:</h3>
-        <form action="{{ url_for('gpon_form') }}" method="POST">
+
         <input type="text" class="form-control" placeholder="SIP Line 2:" name="sipuser2">
-    </form>
 
-    <form action="{{ url_for('gpon_form') }}" method="POST">
+
+
           <input type="text" class="form-control" placeholder="SIP Line 2 Password:" name="sippassword2">
-    </form>
 
 
-    <form>
+
+
 
       <input type="submit" name="submit" value="submit">
     </form>

@@ -26,25 +26,25 @@
       h2{
         color: black;
         font-family: arial;
-        font-size: 120%;
+        font-size: 150%;
         text-align: center;
         }
 
-      h3{
+       h3{
         color: black;
         font-family: arial;
         font-size: 150%;
         text-align: left;
         }
 
-      h4{
+         h4{
         color: black;
         font-family: arial;
         font-size: 150%;
         text-align: left;
         }
 
-      h5{
+        h5{
         color: black;
         font-family: arial;
         font-size: 150%;
@@ -52,21 +52,20 @@
         }
 
 
-      h6{
+                h6{
         color: black;
         font-family: arial;
         font-size: 150%;
-        text-align: top;
         }
 
-      h7{
+         h7{
         color: black;
         font-family: arial;
         font-size: 150%;
-        text-align: top;
+        text-align:top;
         }
 
-      h8{
+                 h8{
         color: black;
         font-family: arial;
         font-size: 130%;
@@ -81,31 +80,31 @@
         }
 
 
-      ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: #333;
-      }
+        ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    }
 
-      li {
-          float: left;
-      }
+    li {
+        float: left;
+    }
 
-      li a, .dropbtn {
-          display: inline-block;
-          color: white;
-          text-align: center;
-          padding: 14px 16px;
-          text-decoration: none;
-      }
+    li a, .dropbtn {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
 
-      li a:hover, .dropdown:hover .dropbtn {
-          background-color: black;
-          text-decoration: none;
+    li a:hover, .dropdown:hover .dropbtn {
+        background-color: black;
+        text-decoration: none;
 
-      }
+    }
 
 </style>
 
@@ -121,16 +120,16 @@
     <h1>GPON CONFIGURATOR</h1>
     <h2> Please fill the text fields with the information from customers. </h2>
 
-    <h3>Slot:</h3>
-    <form action="{{ url_for('gpon_form') }}" method="POST">
+  <h3>Slot:</h3>
+    <form >
   <select name="Slot Position">
     <option value="1" selected>1</option>
     <option value="2">2</option>
   </select>
     </form>
 
-    <h3>OLT Position</h3>
-    <form action="{{ url_for('gpon_form') }}" method="POST">
+    <h3>OLT Position:</h3>
+    <form >
   <select name="OLT Position">
     <option value="1" selected>1</option>
     <option value="2">2</option>
@@ -143,8 +142,8 @@
   </select>
     </form>
 
-    <h4>ONT Position</h4>
-     <form action="{{ url_for('gpon_form') }}" method="POST">
+    <h3>ONT Position:</h3>
+  <form>
   <select name="ONT Position">
     <option value="1" selected>1</option>
     <option value="2">2</option>
@@ -214,8 +213,8 @@
   <br><br>
   </form>
 
-    <h5>SernoID:</h5>
-    <form action="{{ url_for('gpon_form') }}" method="POST">
+    <h6>SernoID:</h6>
+    <form>
       <select name="SernoID">
     <option value="1" selected>1</option>
     <option value="2">2</option>
@@ -246,7 +245,7 @@
     </form>
 
 
-    <h6>PPPoE Information:</h6>
+    <h4>PPPoE Information:</h4>
     <form action="{{ url_for('gpon_form') }}" method="POST">
         <input type="text" class="form-control" placeholder="PPPoE Username:" name="pppoeusername">
     </form>
@@ -257,7 +256,7 @@
 
     <h5>Voip Information:</h5>
 
-    <h7>SIP Line 1</h7>
+    <h3>SIP Line 1:</h3>
     <form action="{{ url_for('gpon_form') }}" method="POST">
         <input type="text" class="form-control" placeholder="SIP Line 1:" name="sipuser1">
     </form>
@@ -265,7 +264,7 @@
     <form action="{{ url_for('gpon_form') }}" method="POST">
           <input type="text" class="form-control" placeholder="SIP Line 1 Password:" name="sippassword1">
     </form>
-      <h8>SIP Line 2</h8>
+      <h3>SIP Line 2:</h3>
         <form action="{{ url_for('gpon_form') }}" method="POST">
         <input type="text" class="form-control" placeholder="SIP Line 2:" name="sipuser2">
     </form>
@@ -275,7 +274,8 @@
     </form>
 
 
-     <form action="{{ url_for('gpon_form') }}" method="POST">
+    <form>
+
       <input type="submit" name="submit">
     </form>
 

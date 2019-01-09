@@ -80,31 +80,31 @@
         }
 
 
-        ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    }
+       ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+          }
 
-    li {
-        float: left;
-    }
+      li {
+       float: left;
+        }
 
-    li a, .dropbtn {
+      li a, .dropbtn {
         display: inline-block;
         color: white;
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
-    }
+          }
 
     li a:hover, .dropdown:hover .dropbtn {
         background-color: black;
         text-decoration: none;
 
-    }
+         }
 
 </style>
 
@@ -121,7 +121,7 @@
     <h2> Please fill the text fields with the information from customers. </h2>
 
   <h3>Slot:</h3>
-    <form >
+    <form action="{{ url_for('gpon_form') }}" method="POST">
   <select name="Slot Position">
     <option value="1" selected>1</option>
     <option value="2">2</option>
@@ -129,7 +129,7 @@
     </form>
 
     <h3>OLT Position:</h3>
-    <form >
+    <form action="{{ url_for('gpon_form') }}" method="POST">
   <select name="OLT Position">
     <option value="1" selected>1</option>
     <option value="2">2</option>
@@ -143,7 +143,7 @@
     </form>
 
     <h3>ONT Position:</h3>
-  <form>
+  <form action="{{ url_for('gpon_form') }}" method="POST">
   <select name="ONT Position">
     <option value="1" selected>1</option>
     <option value="2">2</option>
@@ -214,7 +214,7 @@
   </form>
 
     <h6>SernoID:</h6>
-    <form>
+    <form action="{{ url_for('gpon_form') }}" method="POST">
       <select name="SernoID">
     <option value="1" selected>1</option>
     <option value="2">2</option>

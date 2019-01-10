@@ -52,21 +52,29 @@
         text-align: center;
         }
 
+       footer {
+        color: black;
+        font-family: arial;
+        font-size: 100%;
+        text-align: center;
+        }
+
 
 </style>
 
 <body>
 
-    <h1>GPON CONFIG</h1>
+    <h1>Zhone GPON CONFIG</h1>
+
     <pre>
 
         <h2>System Information:</h2>
          {{ gpon_lines }}
 
-        <h3>PPPoE Information:</h3>
+        <h2>PPPoE Information:</h2>
         {{ gpon_pppoe }}
 
-        <h4>SIP Lines Information:</h4>
+        <h2>POTS Information:</h2>
         {{ gpon_voice }}
 
 
@@ -81,6 +89,8 @@
                  window.history.back();
                                  }
       </script>
+
+        <footer>Ramon Rivera - rrivera@worldnetpr.com  -  787-705-7030</footer>
 
 
 </body>

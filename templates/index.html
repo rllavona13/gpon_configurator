@@ -72,21 +72,31 @@
         text-align: top;
         }
 
+       footer {
+        color: black;
+        font-family: arial;
+        font-size: 100%;
+        text-align: center;
+        }
 </style>
 
 <body>
 
 
-    <h1>GPON CONFIGURATOR</h1>
-    <h2> Please fill the text fields with the information from customers. </h2>
+    <h1>Zhone GPON CONFIGURATOR</h1>
+
+    <form action="{{ url_for('gpon_form') }}" method="POST">
+    <h3>ONT Model:</h3>
+        <select name="ONTModel">
+    <option value="2426" selected>2426</option>
+    <option value="2424">2424</option>
+    </select>
 
   <h3>Slot:</h3>
-    <form action="{{ url_for('gpon_form') }}" method="POST">
+
   <select name="SlotPosition">
     <option value="1" selected>1</option>
-    <option value="2">2</option>
   </select>
-
     <h3>OLT Position:</h3>
     <select name="OLTPosition">
     <option value="1" selected>1</option>
@@ -193,26 +203,21 @@
     <option value="19">19</option>
     <option value="20">20</option>
       </select>
-        <br><br>
 
         <h3>Customer Name:</h3>
 
       <input type="text" class="form-control" placeholder="Customer Name: " name="CustomerName">
-        <br><br>
 
     <h4>PPPoE Information:</h4>
 
         <input type="text" class="form-control" placeholder="PPPoE Username:" name="pppoeusername">
             <input type="text" class="form-control" placeholder="PPPoE Password:" name="pppoepassword">
-                <br><br>
 
     <h5>Voip Information:</h5>
-
       <h3>SIP Line 1:</h3>
-
           <input type="text" class="form-control" placeholder="SIP Line 1:" name="sipuser1">
             <input type="text" class="form-control" placeholder="SIP Line 1 Password:" name="sippassword1">
-                <br><br>
+
 
                     <h3>SIP Line 2:</h3>
                         <input type="text" class="form-control" placeholder="SIP Line 2:" name="sipuser2">
@@ -220,6 +225,7 @@
              <br><br>
         <input type="submit" name="submit" value="submit">
       </form>
+            <footer>Ramon Rivera - rrivera@worldnetpr.com  -  787-705-7030</footer>
 
 </body>
 </html>

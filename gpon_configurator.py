@@ -49,7 +49,8 @@ def gpon_form():
                      + ' pppoe-password ' + (request.form['pppoepassword']) + ' pppoe-auth pap' + '\n'
 
         # CONFIGURE LAN GATEWAY
-        gpon_lan = 'cpe rg lan modify 1/4/2 eth 1 ip-addr 192.168.23.1' + '\n'
+        gpon_lan = 'cpe rg lan modify ' + (request.form['SlotPosition']) + '/' + (request.form['OLTPosition']) \
+                   + '/' + (request.form['ONTPosition']) + ' eth 1 ip-addr 192.168.23.1' + '\n'
 
         # CONFIGURE BRIDGE FOR VOIP
         gpon_sip_bridge = '\nbridge add 1-1-' + (request.form['OLTPosition']) + '-' + (request.form['ONTPosition']) \

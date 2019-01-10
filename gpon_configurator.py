@@ -72,8 +72,6 @@ def gpon_form():
                                + gpon_identity, gpon_pppoe=gpon_pppoe_bridge + gpon_pppoe + gpon_lan,
                                gpon_voice=gpon_sip_bridge + gpon_sip1 + gpon_sip2)
 
-
-
     else:
         return render_template('index.html')  # WHEN SCRIPT RUNS, THIS IS THE PAGE IT SHOWS UNTIL YOU SUBMIT THE FORM
 

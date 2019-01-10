@@ -1,4 +1,3 @@
-__AUTHOR__ = 'Ramon Rivera Llavona'
 """
 This is a simple script that gives you configuration lines to configure Zhone GPON CPE's
 

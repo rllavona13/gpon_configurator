@@ -77,6 +77,6 @@ def gpon_form():
 
 
 if __name__ == '__main__':
-
+    # test
     # TODO: ADD THIS SCRIPT TO NEO LOG WITH BLOCK ATTACKERS SCRIPT CENTRALIZED
     app.run(debug=False, host='0.0.0.0')

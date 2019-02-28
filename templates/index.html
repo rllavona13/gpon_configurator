@@ -88,8 +88,8 @@
 <form action="{{ url_for('gpon_form') }}" method="POST">
     <h3>ONT Model:</h3>
     <select name="ONTModel">
-        <option value="2426" selected>2426</option>
-        <option value="2424">2424</option>
+        <option value="2426">2426</option>
+        <option value="2426" selected >2424</option>
     </select>
 
     <h3>Slot:</h3>
@@ -206,7 +206,7 @@
 
     <h3>Customer Name:</h3>
 
-    <input type="text" class="form-control" placeholder="Customer Name: " name="CustomerName" pattern="[a-zA-Z0-9]">
+    <input type="text" class="form-control" placeholder="Customer Name: " name="CustomerName">
 
     <h4>PPPoE Information:</h4>
 

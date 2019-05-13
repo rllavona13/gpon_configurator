@@ -86,10 +86,18 @@
 <h1>Zhone GPON CONFIGURATOR</h1>
 
 <form action="{{ url_for('gpon_form') }}" method="POST">
+    <h3>GPON Site:</h3>
+    <select name="site">
+        <option value="Ciudad Lumen">Ciudad Lumen</option>
+        <option value="MCS Plaza" selected >MCS Plaza</option>
+    </select>
+
+
+<form action="{{ url_for('gpon_form') }}" method="POST">
     <h3>ONT Model:</h3>
     <select name="ONTModel">
-        <option value="2426">2426</option>
-        <option value="2424" selected >2424</option>
+        <option value="2426" selected >2426</option>
+        <option value="2424">2424</option>
     </select>
 
     <h3>Slot:</h3>

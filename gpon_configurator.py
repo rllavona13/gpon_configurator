@@ -12,6 +12,8 @@ def gpon_form():
 
     if 'submit' in request.form:
 
+        site_vlan = request.form['site']
+
         # SLOT NUMBER
         gpon_position = '\nonu set ' + (request.form['SlotPosition']) + '/' + (request.form['OLTPosition']) \
                         + '/' + (request.form['ONTPosition']) + ' ' + 'meprof zhone-' \
@@ -37,7 +39,7 @@ def gpon_form():
         # CREATE BRIDGE FOR PPPoE
         gpon_pppoe_bridge = '\nbridge add 1-1-' + (request.form['OLTPosition']) + '-' + (request.form['ONTPosition']) \
                             + '/gpononu gtp 5 downlink-pppoe ' \
-                            + 'vlan 302 tagged eth all wlan 1 ' \
+                            + site_vlan + ' tagged eth all wlan 1 ' \
                             + 'rg-bpppoe name ' \
                             + (request.form['CustomerName']) + '-PPPoE' + '\n'
 

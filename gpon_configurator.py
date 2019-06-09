@@ -13,6 +13,7 @@ def gpon_form():
     if 'submit' in request.form:
 
         site_vlan = request.form['site']
+        ont_model = request.form['ONTModel']
 
         # SLOT NUMBER
         gpon_position = '\nonu set ' + (request.form['SlotPosition']) + '/' + (request.form['OLTPosition']) \
@@ -43,7 +44,7 @@ def gpon_form():
                             + 'rg-bpppoe name ' \
                             + (request.form['CustomerName']) + '-PPPoE' + '\n'
 
-        # CONFIGURE
+
         # PPPOE ACCOUNT
         gpon_pppoe = 'cpe rg wan modify ' + (request.form['SlotPosition']) + '/' + (request.form['OLTPosition']) \
                      + '/' + (request.form['ONTPosition']) + ' pppoe-usr-id ' + (request.form['pppoeusername']) \

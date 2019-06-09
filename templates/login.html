@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GPON Configurator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Ramon Rivera Llavona">
+    <meta charset="utf-8">
+
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="{{ url_for('gpon_form', filename='ico/favicon.ico') }}">
+
+</head>
+
+<style>
+
+      h1{
+        color: black;
+        font-family: arial;
+        font-size: 300%;
+        text-align: center;
+        }
+
+      h2{
+        color: black;
+        font-family: arial;
+        font-size: 115%;
+        text-align: center;
+        }
+
+      h3{
+        color: black;
+        font-family: arial;
+        font-size: 150%;
+        text-align: left;
+        }
+
+      h4{
+        color: black;
+        font-family: arial;
+        font-size: 150%;
+        text-align: left;
+        }
+
+      h5{
+        color: black;
+        font-family: arial;
+        font-size: 150%;
+        text-align: left;
+        }
+
+
+      h6{
+        color: black;
+        font-family: arial;
+        font-size: 150%;
+        }
+
+      h7{
+        color: black;
+        font-family: arial;
+        font-size: 150%;
+        text-align:top;
+        }
+
+       h8{
+        color: black;
+        font-family: arial;
+        font-size: 130%;
+        text-align: top;
+        }
+
+       footer {
+        color: black;
+        font-family: arial;
+        font-size: 100%;
+        text-align: center;
+        }
+
+        input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+
+}
+
+input[type=text]:focus {
+  border: 3px solid #4CAF50;
+}
+
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+</style>
+
+<body>
+
+
+<h1>Zhone GPON CONFIGURATOR Login</h1>
+<h2>Use domain credentials</h2>
+
+
+
+    <h3>Customer Name:</h3>
+
+    <input type="text" class="form-control" placeholder="Username:" name="username">
+    <input type="text" class="form-control" placeholder="Password:" name="password">
+
+
+    <input type="submit" name="submit" value="Login">
+<br><br>
+
+</form>
+<footer>Ramon Rivera - rrivera@worldnetpr.com  -  787-705-7030</footer>
+
+</body>
+</html>

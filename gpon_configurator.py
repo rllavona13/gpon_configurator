@@ -39,7 +39,7 @@ def gpon_form():
 
         # CREATE BRIDGE FOR PPPoE
         gpon_pppoe_bridge = '\nbridge add 1-1-' + (request.form['OLTPosition']) + '-' + (request.form['ONTPosition']) \
-                            + '/gpononu gtp 5 downlink-pppoe ' \
+                            + '/gpononu gtp 5 downlink-pppoe vlan ' \
                             + site_vlan + ' tagged eth all wlan 1 ' \
                             + 'rg-bpppoe name ' \
                             + (request.form['CustomerName']) + '-PPPoE' + '\n'

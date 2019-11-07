@@ -44,8 +44,7 @@ def gpon_form():
                             + 'rg-bpppoe name ' \
                             + (request.form['CustomerName']) + '-PPPoE' + '\n'
 
-
-        # PPPOE ACCOUNT
+        #  PPPOE ACCOUNT
         gpon_pppoe = 'cpe rg wan modify ' + (request.form['SlotPosition']) + '/' + (request.form['OLTPosition']) \
                      + '/' + (request.form['ONTPosition']) + ' pppoe-usr-id ' + (request.form['pppoeusername']) \
                      + ' pppoe-password ' + (request.form['pppoepassword']) + ' pppoe-auth pap' + '\n'

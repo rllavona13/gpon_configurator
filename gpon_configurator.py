@@ -70,6 +70,11 @@ def gpon_form():
                     + ' username ' + (request.form['sipuser2']) + ' password ' + (request.form['sippassword2']) \
                     + ' voip-server-profile 1' + '\n'
 
+        gpon_mpls_multicast = 'cpe system common dns-host add OSPF'  \
+                            + 'cpe system common dns-host modify 1/1 domain-name localhost2 ip-address 127.0.0.2' \
+                             + 'cpe system common modify OSPF dns-host-list-profile OSPF' \
+                             + 'cpe system common modify OSPF admin-password worldnet'
+
         return render_template('config.html', gpon_lines=gpon_position + gpon_traps + gpon_com_prof
                                + gpon_identity, gpon_pppoe=gpon_pppoe_bridge + gpon_pppoe + gpon_lan,
                                gpon_voice=gpon_sip_bridge + gpon_sip1 + gpon_sip2)
